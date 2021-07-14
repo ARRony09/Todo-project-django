@@ -1,0 +1,17 @@
+{% extends 'todo/base.html'%}
+
+{%block title%} Login {%endblock%}
+
+{%block content%} 
+
+<div class="text-center">
+
+    <h1 class="text-center">This is Login page</h1>
+<h1>{{ error }}</h1>
+<form method="POST"> 
+    
+{{form.as_p}}
+<button class="btn btn-outline-primary" type="submit">Login</button>
+</form>
+</div>
+{%endblock%}
